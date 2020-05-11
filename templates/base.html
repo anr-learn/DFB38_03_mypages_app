@@ -1,0 +1,16 @@
+<!-- templates/base.html -->
+
+<header>
+ <a href="{% url 'home' %}">Goto HOME page</a> |
+ <a href="{% url 'about' %}">goto ABOUT page</a>
+
+<!-- contents go here, as provided by subclass -->
+<!-- NOTE that 'content' is not a keyword, just a symbol we chose -->
+{% block content %}
+{% endblock content %}
+
+
+
+
+<!-- ### end ### -->
+

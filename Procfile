@@ -1,0 +1,1 @@
+web: gunicorn my_pages_project.wsgi  --log-file -
