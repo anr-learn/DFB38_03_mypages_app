@@ -53,8 +53,10 @@ if True:
 urlpatterns = [
     path('admin/', admin.site.urls),
 	path("", include("my_pages_app.urls")),
-	path("home/", include("my_pages_app.urls")),
-	path("about/", include("my_pages_app.urls")),
+	# ANR @@@@ these cause the {% url 'home' %} template tag to
+	#          resolve to stuff like /about/about
+	#path("home/", include("my_pages_app.urls")),
+	#path("about/", include("my_pages_app.urls")),
 
 ]
 
